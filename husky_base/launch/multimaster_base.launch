@@ -61,5 +61,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Multimaster configuration -->
     <include file="$(find multimaster_launch)/launch/multimaster_common.launch">
         <arg name="robot_name" value="$(arg robot_name)" />
+        <!-- NOTE: This YAML configuration should move to a common husky package instead -->
+        <arg name="yaml_path" value="$(find husky_base)/param/husky_common.yaml" />
     </include>
 </launch>
